@@ -1,0 +1,66 @@
+body {
+    background-color: #040D12;
+}
+
+
+.nav a {
+    color: white;
+}
+
+.remove-home {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+@media screen and (min-width: 764px) {
+    .home-desk {
+        padding: 3rem;
+        /* background-color: red; */
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .home-desk {
+        padding: 1.5rem;
+        /* background-color: rgb(20, 35, 121); */
+    }
+
+    .home-desk .tagline {
+        /* font-size: 5em; */
+        /* background-color: red; */
+    }
+
+    .home-desk .desk {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 576px) {
+    #row-sosmed {
+        /* background-color: red; */
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+
+/* Gaya CSS untuk tampilan gambar yang diperbesar */
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+}
